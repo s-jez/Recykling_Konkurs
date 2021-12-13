@@ -1,0 +1,32 @@
+﻿<Window x:Class="Recykling_Konkurs.Ustawienia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recykling_Konkurs"
+        mc:Ignorable="d"
+        Title="Konkurs o Recyklingu - Roommates318" Height="460" Width="840" FontFamily="Calibri Light" MinWidth="840" Background="#91C46C" MinHeight="840" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="1" Fill="#4D734F"></Rectangle>
+        <Rectangle Grid.Row="3" Fill="#4D734F"></Rectangle>
+        <Label Grid.Row="0" Content="Ustawienia aplikacji" FontSize="50" FontWeight="ExtraBold" Background="#65A693" Padding="20" Foreground="AntiqueWhite" FontFamily="Calibri" HorizontalContentAlignment="Center" />
+        <Button Grid.Row="1" Content="Wyłącz muzykę" FontSize="22" FontWeight="Bold" Width="550" Height="90"  Background="#65A693" Foreground="AntiqueWhite" BorderBrush="#D6D5F2" BorderThickness="5" Cursor="Hand" Click="Button_Click">
+        </Button>
+        <Button Grid.Row="2" Content="Włącz muzykę" FontSize="22" FontWeight="Bold" Width="550" Height="90"  Background="#65A693" Foreground="AntiqueWhite" BorderBrush="#D6D5F2" BorderThickness="5" Cursor="Hand" Click="Button2_Click">
+        </Button>
+        <Button Grid.Row="3" Content="Przejdź do menu głównego" FontSize="22" FontWeight="Bold" Width="550" Height="90"  Background="#65A693" Foreground="AntiqueWhite" BorderBrush="#D6D5F2" BorderThickness="5" Cursor="Hand" Click="btn_Main">
+        </Button>
+        <Rectangle Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Fill="#65A693"></Rectangle>
+        <Label Grid.Row="6" Foreground="AntiqueWhite" Content="Wszelkie prawa do aplikacji zastrzeżone 2021 © by Roommates318" HorizontalAlignment="Center" Margin="0,3,0,0"></Label>
+    </Grid>
+</Window>

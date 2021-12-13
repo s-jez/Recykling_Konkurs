@@ -1,0 +1,119 @@
+﻿<Window x:Class="Recykling_Konkurs.Nauka"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recykling_Konkurs"
+        mc:Ignorable="d"
+        Title="Konkurs o Recyklingu - Roommates318" Height="460" Width="840" FontFamily="Calibri Light" MinWidth="840" Background="#65A693" MinHeight="840"  WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <TabControl Background="#4D734F">
+            <TabItem Header="Recykling" Background="#65A693" FontFamily="Calibri">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="bg_recykling.png" Stretch="Fill"/>
+                    <Image Grid.Row="1" Source="bg_recykling.png" Stretch="Fill" Margin="0,255,0,-1.5" Grid.RowSpan="2"/>
+                    <Label Grid.Row="1" Foreground="AntiqueWhite" FontWeight="DemiBold" HorizontalAlignment="Center" FontSize="40" Content="CZYM JEST RECYKLING?" Margin="212,15,201,0" Width="415"/>
+                    <TextBlock Grid.Row="1" Foreground="AntiqueWhite" FontSize="22" Margin="0,73,46,18" HorizontalAlignment="Right" Width="715">Jest to proces, zmierzający do odzyskania i ponownego wykorzystania odpadów <LineBreak/> komunalnych, przy jak najmniejszym wkładzie energetycznym. <LineBreak/> <LineBreak/> Recykling sprawia, że odpady stają się z powrotem wartościowe i zamiast trafić <LineBreak/>na składowisko, przekształcają się w surowce do produkcji nowych materiałów.</TextBlock>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Podział śmieci" Background="#65A693" FontFamily="Calibri">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Background="Yellow">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="PLASTIK" Foreground="SaddleBrown" Grid.ColumnSpan="2" FontSize="50" FontWeight="Bold" Padding="45,10,0,0" Height="77" VerticalAlignment="Bottom" Margin="0,-2,0,0" FontFamily="Consolas"/>
+                        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" FontSize="18" Padding="10,5,0,0" HorizontalAlignment="Left" TextWrapping="Wrap" Width="285" FontFamily="Consolas" Background="#92bb75"><LineBreak/>- plastikowe torby <LineBreak/>- zgniecione butelki<LineBreak/>- plastikowe opakowania<LineBreak/>- folia aluminiowa<LineBreak/>- paczki po chipsach <LineBreak/>- korki od butelek<LineBreak />- rękawiczki jednorazowe</TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1" Background="DeepSkyBlue">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="PAPIER" Foreground="Gray" Grid.ColumnSpan="2" FontSize="50" FontWeight="ExtraBlack" FontFamily="Consolas" Padding="50,10,0,0" Margin="0,-2,0,0" />
+                        <TextBlock Grid.Row="1" Grid.ColumnSpan="2"  FontSize="18" Padding="10,5,0,0" TextWrapping="Wrap" FontFamily="Consolas" Background="#91C46C"><LineBreak/>- gazety <LineBreak />- czasopisma <LineBreak/>- katalogi<LineBreak />- ulotki <LineBreak/>- papier szkolny <LineBreak/>- papier biurowy <LineBreak/>- torby papierowe <LineBreak/>- worki papierowe <LineBreak/>- opakowania z papieru</TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="2" Background="SpringGreen">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="SZKŁO" Grid.ColumnSpan="2" FontSize="50" FontWeight="Bold" FontFamily="Consolas" Padding="65,10,0,0" Margin="0,-2,0,0"/>
+                        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" FontSize="18" TextWrapping="Wrap" Padding="10,5,0,0" FontFamily="Consolas" Background="#92bb75"><LineBreak/>- butelki szklane<LineBreak/>- słoiki<LineBreak/>- szkło z żarówek <LineBreak/>- szklanki <LineBreak />- okna <LineBreak/>- szyby</TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" Background="SaddleBrown">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="BIO" Foreground="Yellow" Grid.ColumnSpan="2" FontSize="50" FontFamily="Consolas" FontWeight="Bold" Padding="95,10,0,0" />
+                        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="Wrap" FontSize="18" Padding="10,5,0,0" FontFamily="Consolas" Background="#92bb75"><LineBreak/>- odpady warzywne <LineBreak/>- odpady owoców <LineBreak/>- gałęzie drzew i krzewów <LineBreak/>- resztki jedzenia <LineBreak/>- trociny i kora drzew <LineBreak/>- skoszona trawa <LineBreak/>- liście <LineBreak/>- kwiaty</TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1" Background="Gray">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="POPIÓŁ" Foreground="DeepSkyBlue" Grid.ColumnSpan="2" FontSize="50" FontFamily="Consolas" FontWeight="Bold" Padding="50,10,0,0" />
+                        <TextBlock Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" FontFamily="Consolas" TextWrapping="Wrap"  Padding="10,5,0,0" Background="#91C46C"><LineBreak/>- popiół (jednak musi on być koniecznie ostudzony WSYPYWANIE GORĄCEGO POPIOŁU JEST ZABRONIONE)<LineBreak/></TextBlock>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="2" Background="Black">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="MIESZANE" Foreground="SpringGreen" Grid.ColumnSpan="2" FontSize="50" FontFamily="Consolas" FontWeight="Bold" Padding="30,10,0,0" />
+                        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" TextWrapping="Wrap" FontFamily="Consolas" Padding="10,5,0,0" Background="#92bb75"><LineBreak/>- wszystko pozostałe (ponieważ te odpady nie nadają się już do recyklingu dlatego możemy tam wrzucać niemalże WSZYSTKO)</TextBlock>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ciekawostki" Background="#65A693" FontFamily="Calibri">
+                <Grid>
+                    <Image Source="ciekowostki.png" Stretch="Fill" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
